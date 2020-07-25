@@ -1,0 +1,2415 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Siêu Thị Khóa Học Hàng Đầu Việt Nam </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">    	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+ 	<link rel="stylesheet" href="css/style.css">
+ 	<link rel="shortcut icon" type="image/png" href="./favicon/favicon.png"/>
+</head>
+<body>
+ 	<div class="background-black hide-element"></div> <!-- NỀN MÀU ĐEN -->
+
+ 	<div class="menu-mobile">
+ 		<div class="menu-mobile_close">
+ 			<i class="fa fa-angle-left btnCloseMenuMobile"></i>
+ 		</div>
+ 		<ul class="menu-mobile_main">
+ 			<li><i class="fa fa-comment fa-left"></i><span>Ngoại ngữ</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-music  fa-left"></i><span>Âm nhạc</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-mouse-pointer fa-left"></i><span>Công nghệ thông tin</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-plus-square fa-left"></i></i><span>Thể thao - Sức khỏe</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-bullhorn fa-left"></i><span>Marketing</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-pencil fa-left"></i><span>Thiết kế</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-line-chart fa-left"></i><span>Kinh doanh - Khởi nghiệp</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-diamond fa-left"></i><span>Phát triển cá nhân</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-desktop fa-left"></i><span>Tin học văn phòng</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-camera fa-left"></i><span>Multimedia</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-graduation-cap fa-left"></i><span>Kiến thức chuyên ngành</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-star-o fa-left"></i><span>Nghệ thuật đời sống</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-female fa-left"></i><span>Hôn nhân - gia đình</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-github-alt fa-left"></i><span>Nuôi dạy con</span><i class="fa fa-angle-right"></i></li>
+			<li><i class="fa fa-gamepad fa-left"></i><span>Thể thao điện tử</span><i class="fa fa-angle-right"></i></li>
+ 		</ul>
+ 	</div> <!-- END MENU MOBILE -->
+
+ 	<header class="header">
+ 		<div class="header-top">
+ 			<div class="container">
+ 				<a href="">Kích hoạt khóa học</a>
+ 				<a href="">Kiểm tra đơn hàng</a>
+ 				<a href="">Chăm sóc khách hàng</a>
+ 				<a href="">Trở thành giảng viên</a>
+ 				<a href="">Khóa học của tôi</a>
+ 			</div>
+ 		</div>
+ 		<div class="header-body">
+ 			<div class="container">
+ 				<div class="header-body_item item-logo">
+ 					<img src="images/logo_full.png" alt="Edumall.vn" width="100px">
+ 				</div>
+ 				<div class="header-body_item item-logo-mobile">
+ 					<img src="images/logo-mobile.png" alt="" width="30px">
+ 					<i class="fa fa-bars btnOpenMenuMoblie"></i>
+ 				</div>
+ 				<div class="header-body_item item-search">
+ 					<form action="">
+ 						<input type="text" placeholder="Tìm kiếm khóa học ngay" id="search-course">
+ 						<i class="fa fa-search btnSearch"></i>
+ 					</form>
+ 					<div class="dropdown-search hide-element">
+ 						<div class="key-search">Từ khóa phổ biến <span>Xóa lịch sử</span></div>
+ 						<ul>
+ 							<a href=""><li><i class="fa fa-history"></i> Lê Thẩm Dương</li></a>
+ 							<a href=""><li><i class="fa fa-history"></i> Tiếng Anh</li></a>
+ 							<a href=""><li><i class="fa fa-history"></i> Sức khỏe - Đời sống</li></a>
+ 							<a href=""><li><i class="fa fa-history"></i> CNTT</li></a>
+ 							<a href=""><li><i class="fa fa-history"></i> Âm nhạc</li></a>
+ 						</ul>
+ 					</div>
+ 				</div>
+ 				<div class="header-body_item item-tool">
+ 					<i class="fa fa-shopping-cart" title="Giỏ hàng"><span class="tool-number">0</span></i>
+ 					<i class="fa fa-heart-o" title="Khóa học bạn quan tâm"><span class="tool-number" id="toolCare">0</span></i>
+ 					<i class="fa fa-bell-o" title="Thông báo"><span class="tool-number">0</span></i>
+ 					<i class="fa fa-user btnOpenLogin"></i>
+ 				</div>
+ 				<div class="header-body_item item-login-regis">
+ 					<a href="" class="item-login">Đăng Nhập</a>
+ 					<a href="" class="item-regis">Đăng Ký</a>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		<div class="header-footer hide-element">
+ 			<div class="container">
+ 				<a href="" class="header-footer_item item-first-child" id="openMenuCategory">Danh mục <i class="fa fa-chevron-down dropdown-icon"></i></a>
+ 				<a href="" class="header-footer_item "><img src="images/f1.png" alt="">Kích hoạt khóa học</a>
+ 				<a href="" class="header-footer_item item-medium-hide"><img src="images/f2.png" alt="">Khóa học của tôi</a>
+ 				<a href="" class="header-footer_item item-small-hide"><img src="images/f3.png" alt="">Khuyến mãi</a>
+ 				<a href="" class="header-footer_item item-last-child"><img src="images/live.jpg" alt="">Live Stream</a>
+ 			</div>
+ 		</div>
+ 	</header> <!-- END MENU HEADER -->
+
+ 	<div class="form-login">
+ 		<div class="form-header">
+ 			<h4 class="title-form">ĐĂNG NHẬP</h4>
+ 			<span class="btnCloseForm">Đóng [X]</span>
+ 		</div>
+ 		<div class="form-body">
+ 			<form action="">
+				<input type="text" placeholder="Tên đăng nhập ..." class="max-width">
+				<input type="password" placeholder="Mật khẩu ..." class="max-width">
+				<input type="submit" value="ĐĂNG NHẬP" class="btn btn-danger submit-form max-width">
+				<input type="checkbox" id="rememberuser" name="rememberuser" value="login">
+				<span class="remember-user">Remember Me?</span>
+			</form>
+			<div class="form-diff">OR</div>
+			<div class="form-item">
+				<i class="fa fa-facebook" aria-hidden="true" title="Đăng nhập với Facebook" data-toggle="tooltip" data-placement="bottom"></i>
+				<i class="fa fa-twitter" aria-hidden="true"  title="Đăng nhập với Twitter" data-toggle="tooltip" data-placement="bottom"></i>
+				<i class="fa fa-google-plus" aria-hidden="true" title="Đăng nhập với Google Plus" data-toggle="tooltip" data-placement="bottom"></i>
+			</div>
+ 		</div>
+ 		<div class="form-footer">
+ 			<div>Bạn chưa có tài khoản? <span class="to-regis">Đăng ký ngay</span></div>
+			<div><a href="" class="forget-password">Quên mật khẩu?</a></div>
+ 		</div>
+ 	</div> <!-- END LOGIN -->
+ 	<div class="form-regis">
+ 		<div class="form-header">
+ 			<h4 class="title-form">ĐĂNG KÝ</h4>
+ 			<span class="btnCloseForm">Đóng [X]</span>
+ 		</div>
+ 		<div class="form-body">
+ 			<form action="">
+				<input type="text" placeholder="Tên đăng nhập ..." class="max-width">
+				<input type="password" placeholder="Mật khẩu ..." class="max-width">
+				<input type="password" placeholder="Nhập lại mật khẩu ..." class="max-width">
+				<input type="email" placeholder="Email đăng ký ..." class="max-width">
+				<input type="text" placeholder="Số điện thoại ..." class="max-width">
+				<input type="submit" value="ĐĂNG KÝ" class="btn btn-danger submit-form max-width">
+				<div class="text-danger phone-number">Lưu ý: Nhập đúng SĐT để nhận mã xác minh tài khoản!</div>
+			</form>
+ 		</div>
+ 		<div class="form-footer">
+ 			<div>Bạn đã có tài khoản? <span class="to-login">Đăng nhập ngay</span></div>
+ 		</div>
+ 	</div> <!-- END LOGIN & REGIS -->
+
+ 	<section class="wrapper content">
+ 		<div class="container">
+ 			<div class="banner">
+ 				<div class="row">
+ 					<div class="col-md-4 col-lg-3">
+ 						<div class="banner-category">
+ 							<i class="fa fa-caret-up hide-element"></i>
+ 							<p>Danh Mục</p>
+							<ul>
+								<li>
+									<i class="fa fa-comment fa-left"></i>
+ 									<span class="list-category">Ngoại Ngữ</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Ngoại Ngữ</p>
+ 										<li><a href="">Tiếng Pháp, Đức, Nga</a></li>
+ 										<li><a href="">Topica Native</a></li>
+ 										<li><a href="">Tiếng Anh</a></li>
+ 										<li><a href="">Luyện thi tiếng Anh</a></li>
+ 										<li><a href="">Tiếng Nhật, Trung, Hàn</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category">Ngoại Ngữ - Featured Course</p>
+ 										<li>
+ 											<img src="./images/ngoai-ngu-01.png" title="Nền tảng tiếng Anh cho người mới bắt đầu">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Nền tảng tiếng Anh cho người mới bắt đầu">Nền tảng tiếng Anh cho người mới bắt đầu</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.3</b> (3113)</span>
+												<p class="price-course">
+													<span class="price-course_new">149.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/ngoai-ngu-02.jpg" title="Giao tiếp tiếng Anh với giáo viên bản ngữ">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Giao tiếp tiếng Anh với giáo viên bản ngữ">Giao tiếp tiếng Anh với giáo viên bản ngữ</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">149.000 ₫</span>
+													<span class="price-course_old"> <s>499.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/ngoai-ngu-03.png" title="Tiếng Anh giao tiếng thường ngày">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Tiếng Anh giao tiếng thường ngày">Tiếng Anh giao tiếng thường ngày</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (10)</span>
+												<p class="price-course">
+													<span class="price-course_new">149.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/ngoai-ngu-04.png" title="100 ngày nâng cao trình độ nói tiếng Anh">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="100 ngày nâng cao trình độ nói tiếng Anh">100 ngày nâng cao trình độ nói tiếng Anh</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (19)</span>
+												<p class="price-course">
+													<span class="price-course_new">149.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Ngoại Ngữ -->
+								<li>
+									<i class="fa fa-music  fa-left"></i>
+ 									<span class="list-category">Âm Nhạc</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Âm Nhạc</p>
+ 										<li><a href="">Luyện thanh</a></li>
+ 										<li><a href="">Nhạc cụ</a></li>
+ 										<li><a href="">Sản xuất và sáng tác</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category">Âm Nhạc - Featured Course</p>
+ 										<li>
+ 											<img src="./images/am-nhac-01.png" title="Guita đệm hát trong 30 ngày">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Guita đệm hát trong 30 ngày">Guita đệm hát trong 30 ngày</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.4</b> (769)</span>
+												<p class="price-course">
+													<span class="price-course_blue">699.000 ₫</span>
+													
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/am-nhac-02.jpg" title="Guita đệm hát cơ bản cùng HAKETU">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Guita đệm hát cơ bản cùng HAKETU">Guita đệm hát cơ bản cùng HAKETU</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.1</b> (185)</span>
+												<p class="price-course">
+													<span class="price-course_new">199.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/am-nhac-03.jpg" title="Học cách hát nhanh và đơn giản">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Học cách hát nhanh và đơn giản">Học cách hát nhanh và đơn giản</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (556)</span>
+												<p class="price-course">
+													<span class="price-course_new">199.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/am-nhac-04.png" title="Giáo trình Finger Style ngắn nhất">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Giáo trình Finger Style ngắn nhất">Giáo trình Finger Style ngắn nhất</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.2</b> (141)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>729.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Âm Nhạc -->
+								<li>
+									<i class="fa fa-mouse-pointer  fa-left"></i>
+ 									<span class="list-category">Công Nghệ Thông Tin</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Công Nghệ Thông Tin</p>
+ 										<li><a href="">Ngôn ngữ lập trình</a></li>
+ 										<li><a href="">Thiết bị điện tử</a></li>
+ 										<li><a href="">Mobile / App</a></li>
+ 										<li><a href="">Web Deverlopment</a></li>
+										<li><a href="">Cơ sở dữ liệu</a></li>
+										<li><a href="">Bảo mật</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category" style="font-size: 15px">Công Nghệ Thông Tin - Featured Course</p>
+ 										<li>
+ 											<img src="./images/it-14.png" title="Lập trình C# trong 5 tuần - Cơ bản">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Lập trình C# trong 5 tuần - Cơ bản">Lập trình C# trong 5 tuần - Cơ bản</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.7</b> (91)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/it-02.png" title="Thành thạo ngôn ngữ lập trình C++">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Thành thạo ngôn ngữ lập trình C++">Thành thạo ngôn ngữ lập trình C++</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/it-03.jpg" title="ALL in one, HTML/CSS, Bootstrap4">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="ALL in one, HTML/CSS, Bootstrap4">ALL in one, HTML/CSS, Bootstrap4</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.6</b> (66)</span>
+												<p class="price-course">
+													<span class="price-course_new">199.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/it-14.png" title="Lập trình C# trong 5 tuần - Nâng cao">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Lập trình C# trong 5 tuần - Nâng cao">Lập trình C# trong 5 tuần - Nâng cao</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<span class="star-vote"><b>4.9</b> (29)</span>
+												<p class="price-course">
+													<span class="price-course_new">199.000 ₫</span>
+													<span class="price-course_old"> <s>729.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Công Nghệ Thông Tin -->
+								<li>
+									<i class="fa fa-plus-square  fa-left"></i>
+ 									<span class="list-category">Thể Thao - Sức Khỏe</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Thể Thao - Sức Khỏe</p>
+ 										<li><a href="">Thể thao</a></li>
+										<li><a href="">Fitness - gym</a></li>
+										<li><a href="">Sức khỏe</a></li>
+										<li><a href="">Dance</a></li>
+										<li><a href="">Giảm cân</a></li>
+										<li><a href="">Yoga - Thiền</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category" style="font-size: 15px">Thể Thao - Sức Khỏe - Featured Course</p>
+ 										<li>
+ 											<img src="./images/thethao-suckhoe-01.jpg" title="Học Zumba giảm cân thiệt đơn giản">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Học Zumba giảm cân thiệt đơn giản">Học Zumba giảm cân thiệt đơn giản</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/thethao-suckhoe-02.jpg" title="Yoga trực tuyến - Khỏe đẹp ngay tại nhà">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Yoga trực tuyến - Khỏe đẹp ngay tại nhà">Yoga trực tuyến - Khỏe đẹp ngay tại nhà</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (124)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/thethao-suckhoe-03.png" title="Yoga trẻ hóa - Làm đẹp cho khuân mặt">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Yoga trẻ hóa - Làm đẹp cho khuân mặt">Yoga trẻ hóa - Làm đẹp cho khuân mặt</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.3</b> (75)</span>
+												<p class="price-course">
+													<span class="price-course_new">149.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/thethao-suckhoe-04.png" title="Diện chẩn - Chữa bệnh không dùng thuốc">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Diện chẩn - Chữa bệnh không dùng thuốc">Diện chẩn - Chữa bệnh không dùng thuốc</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>3.8</b> (29)</span>
+												<p class="price-course">
+													<span class="price-course_new">129.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Thể Thao - Sức Khỏe -->
+								<li>
+									<i class="fa fa-bullhorn fa-left"></i>
+ 									<span class="list-category">Marketing</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Marketing</p>
+ 										<li><a href="">Marketing căn bản</a></li>
+										<li><a href="">Digital marketing</a></li>
+										<li><a href="">Quảng cáo, PR</a></li>
+										<li><a href="">SEO, content marketing</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category">Marketing - Featured Course</p>
+ 										<li>
+ 											<img src="./images/marketing-01.jpg" title="Làm chủ 6 công cụ Marketing HOT nhất">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Làm chủ 6 công cụ Marketing HOT nhất">Làm chủ 6 công cụ Marketing HOT nhất</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/marketing-02.png" title="Kiếm tiền trên Youtube thật dễ dàng">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Kiếm tiền trên Youtube thật dễ dàng">Kiếm tiền trên Youtube thật dễ dàng</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.3</b> (60)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/marketing-03.png" title="Khóa học quảng cáo Facebook cơ bản">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Khóa học quảng cáo Facebook cơ bản">Khóa học quảng cáo Facebook cơ bản</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">399.000 ₫</span>
+													<span class="price-course_old"> <s>999.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/marketing-04.jpg" title="Trọn bộ 70 bí kíp quảng cáo Google Adwords">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Trọn bộ 70 bí kíp quảng cáo Google Adwords">Trọn bộ 70 bí kíp quảng cáo Google Adwords</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.2</b> (216)</span>
+												<p class="price-course">
+													<span class="price-course_new">199.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Marketing -->
+								<li>
+									<i class="fa fa-pencil fa-left"></i>
+ 									<span class="list-category">Thiết Kế</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Thiết Kế</p>
+ 										<li><a href="">Thiết kế đồ họa</a></li>
+										<li><a href="">Phần mềm thiết kế</a></li>
+										<li><a href="">3D, Animation</a></li>
+										<li><a href="">Kiến trúc, nội thất</a></li>
+										<li><a href="">Tư duy thiết kế</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category">Thiết Kế - Featured Course</p>
+ 										<li>
+ 											<img src="./images/thietke-01.png" title="Luyện Photoshop trọn bộ với thầy Đức Lợi">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Luyện Photoshop trọn bộ với thầy Đức Lợi">Luyện Photoshop trọn bộ với thầy Đức Lợi</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.7</b> (960)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/thietke-02.jpg" title="Học Illustrator, Photoshop và Animate CC 2019">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Học Illustrator, Photoshop và Animate CC 2019">Học Illustrator, Photoshop và Animate CC 2019</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (34)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/thietke-03.jpg" title="Luyện Illustrator trọn bộ với thầy Đức Lợi">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Luyện Illustrator trọn bộ với thầy Đức Lợi">Luyện Illustrator trọn bộ với thầy Đức Lợi</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.6</b> (342)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/thietke-04.jpg" title="Trọn bộ Auto Cad 2D từ cơ bản đến nâng cao">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Trọn bộ Auto Cad 2D từ cơ bản đến nâng cao">Trọn bộ Auto Cad 2D từ cơ bản đến nâng cao</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.5</b> (190)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Thiết Kế -->
+								<li>
+									<i class="fa fa-line-chart fa-left"></i>
+ 									<span class="list-category">Kinh Doanh - Khởi Nghiệp</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Kinh Doanh - Khởi Nghiệp</p>
+ 										<li><a href="">Thiết kế đồ họa</a></li>
+										<li><a href="">Phần mềm thiết kế</a></li>
+										<li><a href="">3D, Animation</a></li>
+										<li><a href="">Kiến trúc, nội thất</a></li>
+										<li><a href="">Tư duy thiết kế</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category" style="font-size: 13px">Kinh Doanh - Khởi Nghiệp - Featured Course</p>
+ 										<li>
+ 											<img src="./images/kinhdoanh-khoinghiep-01.jpg" title="Tự triển khai kinh doanh Dropshipping">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Tự triển khai kinh doanh Dropshipping">Tự triển khai kinh doanh Dropshipping</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.4</b> (485)</span>
+												<p class="price-course">
+													<span class="price-course_blue">699.000 ₫</span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/kinhdoanh-khoinghiep-02.jpg" title="89 ngày thành tài với Amazon Dropshipping">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="89 ngày thành tài với Amazon Dropshipping">89 ngày thành tài với Amazon Dropshipping</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/kinhdoanh-khoinghiep-03.jpg" title="Bí quyết kinh doanh quán cà phê từ A đến Z">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Bí quyết kinh doanh quán cà phê từ A đến Z">Bí quyết kinh doanh quán cà phê từ A đến Z</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/kinhdoanh-khoinghiep-04.jpg" title="Kiếm tiền bền vững với Dropshipping">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Kiếm tiền bền vững với Dropshipping">Kiếm tiền bền vững với Dropshipping</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<span class="star-vote"><b>4.8</b> (369)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Kinh Doanh - Khởi Nghiệp -->
+								<li>
+									<i class="fa fa-diamond fa-left"></i>
+ 									<span class="list-category">Phát Triển Cá Nhân</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Phát Triển Cá Nhân</p>
+ 										<li><a href="">Thay đổi bản thân</a></li>
+										<li><a href="">Pháp triển sự nghiệp</a></li>
+										<li><a href="">Xây dựng hình ảnh cá nhân</a></li>
+										<li><a href="">Từ bỏ thói quen xấu</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category" style="font-size: 15px">Phát Triển Cá Nhân - Featured Course</p>
+ 										<li>
+ 											<img src="./images/phattriencanhan-01.png" title="Bí quyết giao tiếp để thành công">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Bí quyết giao tiếp để thành công">Bí quyết giao tiếp để thành công</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.3</b> (144)</span>
+												<p class="price-course">
+													<span class="price-course_blue">699.000 ₫</span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/phattriencanhan-02.png" title="Bí quyết trở thành người quản lý">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Bí quyết trở thành người quản lý">Bí quyết trở thành người quản lý</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (212)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/phattriencanhan-03.png" title="Nghệ thuật bán hàng đỉnh cao 2020">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Nghệ thuật bán hàng đỉnh cao 2020">Nghệ thuật bán hàng đỉnh cao 2020</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (21)</span>
+												<p class="price-course">
+													<span class="price-course_new">149.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/phattriencanhan-04.png" title="Làm chủ cảm xúc - Thúc đẩy thành công">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Làm chủ cảm xúc - Thúc đẩy thành công">Làm chủ cảm xúc - Thúc đẩy thành công</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Phát Triển Cá Nhân -->
+								<li>
+									<i class="fa fa-desktop fa-left"></i>
+ 									<span class="list-category">Tin Học Văn Phòng</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Tin Học Văn Phòng</p>
+ 										<li><a href="">Phần mềm quản lý dữ liệu</a></li>
+										<li><a href="">Word - Excel - Power Point</a></li>
+										<li><a href="">Phần mềm kế toán</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category" style="font-size: 15px">Tin Học Văn Phòng - Featured Course</p>
+ 										<li>
+ 											<img src="./images/tinhocvanphong-01.png" title="85 Chuyên đề thành thạo công cụ Excel">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="85 Chuyên đề thành thạo công cụ Excel">85 Chuyên đề thành thạo công cụ Excel</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.2</b> (264)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/tinhocvanphong-02.png" title="Kế toán tổng hợp trên phần mềm Excel">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Kế toán tổng hợp trên phần mềm Excel">Kế toán tổng hợp trên phần mềm Excel</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.6</b> (733)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/tinhocvanphong-03.jpg" title="Trọn bộ kĩ năng văn phòng thời kỳ 4.0">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Trọn bộ kĩ năng văn phòng thời kỳ 4.0">Trọn bộ kĩ năng văn phòng thời kỳ 4.0</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.5</b> (655)</span>
+												<p class="price-course">
+													<span class="price-course_new">199.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/tinhocvanphong-04.png" title="Thuyết trình chuyên nghiệp với Power Point">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Thuyết trình chuyên nghiệp với Power Point">Thuyết trình chuyên nghiệp với Power Point</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Tin Học Văn Phòng -->
+								<li>
+									<i class="fa fa-camera fa-left"></i>
+ 									<span class="list-category">Multimedia</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Multimedia</p>
+ 										<li><a href="">Kiến thức nhiếp ảnh</a></li>
+										<li><a href="">Biên tập video</a></li>
+										<li><a href="">Công cụ chỉnh sửa ảnh</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category">Multimedia - Featured Course</p>
+ 										<li>
+ 											<img src="./images/multimedia-01.png" title="Trải nghiệm những bức hình cuộc sống">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Trải nghiệm những bức hình cuộc sống">Trải nghiệm những bức hình cuộc sống</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/multimedia-02.png" title="Dựng video với Adobe Premiere">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Dựng video với Adobe Premiere">Dựng video với Adobe Premiere</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (59)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>499.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/multimedia-03.jpg" title="Nhiếp ảnh thương mại cho người mới bắt đầu">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Nhiếp ảnh thương mại cho người mới bắt đầu">Nhiếp ảnh thương mại cho người mới bắt đầu</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">229.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/multimedia-04.png" title="Filmora - Dựng phim cho người sáng tạo">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Filmora - Dựng phim cho người sáng tạo">Filmora - Dựng phim cho người sáng tạo</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.3</b> (336)</span>
+												<p class="price-course">
+													<span class="price-course_new">299.000 ₫</span>
+													<span class="price-course_old"> <s>899.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Multimedia -->
+								<li>
+									<i class="fa fa-graduation-cap fa-left"></i>
+ 									<span class="list-category">Kiến Thức Chuyên Ngành</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Kiến Thức Chuyên Ngành</p>
+ 										<li><a href="">Luyện thi chứng chỉ chuyên ngành</a></li>
+										<li><a href="">Kế toán</a></li>
+										<li><a href="">Luật học</a></li>
+										<li><a href="">Khoa học - xã hội</a></li>
+										<li><a href="">Khám phá vũ trụ</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category" style="font-size: 14px">Kiến Thức Chuyên Ngành - Featured Course</p>
+ 										<li>
+ 											<img src="./images/kienthucchuyennganh-01.jpg" title="Kế toán thuế thực tế từ A đến Z">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Kế toán thuế thực tế từ A đến Z">Kế toán thuế thực tế từ A đến Z</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (59)</span>
+												<p class="price-course">
+													<span class="price-course_new">199.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/kienthucchuyennganh-02.jpg" title="Cách xử lý về hóa đơn chứng từ kế toán">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Cách xử lý về hóa đơn chứng từ kế toán">Cách xử lý về hóa đơn chứng từ kế toán</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.1</b> (264)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/kienthucchuyennganh-03.jpg" title="Luyện thi chứng chỉ MOS EXCEL 2020">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Luyện thi chứng chỉ MOS EXCEL 2020">Luyện thi chứng chỉ MOS EXCEL 2020</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/kienthucchuyennganh-04.jpg" title="Kinh nghiệm kê khai - quyết toán thuế">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Kinh nghiệm kê khai - quyết toán thuế">Kinh nghiệm kê khai - quyết toán thuế</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.5</b> (166)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>999.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Kiến Thức Chuyên Ngành -->
+								<li>
+									<i class="fa fa-star-o fa-left"></i>
+ 									<span class="list-category">Nghệ Thuật Đời Sống</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Nghệ Thuật Đời Sống</p>
+ 										<li><a href="">Không gian sống</a></li>
+										<li><a href="">Đồ Hanmade</a></li>
+										<li><a href="">Sức khỏe tinh thần</a></li>
+										<li><a href="">Làm đẹp</a></li>
+										<li><a href="">Nấu ăn - Pha chế</a></li>
+										<li><a href="">Giải trí</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category" style="font-size: 15px">Nghệ Thuật Đời Sống - Featured Course</p>
+ 										<li>
+ 											<img src="./images/nghethuat-doisong-01.jpg" title="Trang điểm cơ bản cho người mới bắt đầu">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Trang điểm cơ bản cho người mới bắt đầu">Trang điểm cơ bản cho người mới bắt đầu</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/nghethuat-doisong-02.jpg" title="Tự chăm sóc da tại nhà hiệu quả">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Tự chăm sóc da tại nhà hiệu quả">Tự chăm sóc da tại nhà hiệu quả</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (366)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/nghethuat-doisong-03.jpg" title="Trở Thành Cao Thủ Pha Chế Tổng Hợp">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Trở Thành Cao Thủ Pha Chế Tổng Hợp">Trở Thành Cao Thủ Pha Chế Tổng Hợp</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (366)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/nghethuat-doisong-04.jpg" title="KHÓA HỌC CẮM HOA TRANG TRÍ MỞ SHOP">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="KHÓA HỌC CẮM HOA TRANG TRÍ MỞ SHOP">KHÓA HỌC CẮM HOA TRANG TRÍ MỞ SHOP</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">199.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Nghệ Thuật Đời Sống -->
+								<li>
+									<i class="fa fa-female fa-left"></i>
+ 									<span class="list-category">Hôn Nhân Gia Đình</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Hôn Nhân Gia Đình</p>
+ 										<li><a href="">Đời sống vợ chồng</a></li>
+										<li><a href="">Mẹ bầu</a></li>
+										<li><a href="">Chăm sóc trẻ sơ sinh</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category">Hôn Nhân Gia Đình - Featured Course</p>
+ 										<li>
+ 											<img src="./images/honhan-giadinh-01.jpg" title="Nghệ thuật phòng the">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Nghệ thuật phòng the">Nghệ thuật phòng the</a></h6>
+ 												<span class="new-course">MỚI</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/honhan-giadinh-02.jpg" title="Tử huyệt ngôn từ trong tình yêu">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Tử huyệt ngôn từ trong tình yêu">Tử huyệt ngôn từ trong tình yêu</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.3</b> (39)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/honhan-giadinh-03.jpg" title="MASSAGE tạo cảm giác thư giãn">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="MASSAGE tạo cảm giác thư giãn">MASSAGE tạo cảm giác thư giãn</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (74)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/honhan-giadinh-04.jpg" title="Phụ nữ lãnh đạo bằng yêu thương">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Phụ nữ lãnh đạo bằng yêu thương">Phụ nữ lãnh đạo bằng yêu thương</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.3</b> (41)</span>
+												<p class="price-course">
+													<span class="price-course_new">199.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Hôn Nhân Gia Đình -->
+								<li>
+									<i class="fa fa-github-alt fa-left"></i>
+ 									<span class="list-category">Nuôi Dạy Con</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Nuôi Dạy Con</p>
+ 										<li><a href="">Phương pháp dạy con</a></li>
+										<li><a href="">Dinh dưỡng cho con</a></li>
+										<li><a href="">Giáo dục giới tính</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category">Nuôi Dạy Con - Featured Course</p>
+ 										<li>
+ 											<img src="./images/nuoidaycon-01.jpg" title="Nuôi dậy cong đúng cách như người Nhật">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Nuôi dậy cong đúng cách như người Nhật">Nuôi dậy cong đúng cách như người Nhật</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.3</b> (447)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>799.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/nuoidaycon-02.png" title="Dạy con theo phương pháp của người Do Thái">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Dạy con theo phương pháp của người Do Thái">Dạy con theo phương pháp của người Do Thái</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.5</b> (28)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/nuoidaycon-03.jpg" title="Hãy quan tâm tới cảm xúc của con">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Hãy quan tâm tới cảm xúc của con">Hãy quan tâm tới cảm xúc của con</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (74)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>599.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/nuoidaycon-04.jpg" title="Nuôi dậy con đúng cách và khoa học">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Nuôi dậy con đúng cách và khoa học">Nuôi dậy con đúng cách và khoa học</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.5</b> (669)</span>
+												<p class="price-course">
+													<span class="price-course_new">199.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Nuôi Dạy Con -->
+								<li>
+									<i class="fa fa-gamepad fa-left"></i>
+ 									<span class="list-category">Thể Thao Điện Tử</span>
+ 									<ul class="banner-category_sub">
+ 										<p class="title-category">Thể Thao Điện Tử</p>
+ 										<li><a href="">Liên Minh Huyền Thoại</a></li>
+										<li><a href="">PUBG - Sinh Tồn</a></li>
+										<li><a href="">FIFA ONLINE 4</a></li>
+										<li><a href="">Gunny Hồi Ức</a></li>
+ 									</ul>
+ 									<ul class="banner-category_sub-main">
+ 										<p class="title-category">Thể Thao Điện Tử - Featured Course</p>
+ 										<li>
+ 											<img src="./images/thethaodientu-01.jpg" title="Cái nhìn mới về eSport thời đại 4.0">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Cái nhìn mới về eSport thời đại 4.0">Cái nhìn mới về eSport thời đại 4.0</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.3</b> (321)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/thethaodientu-02.jpg" title="Trở thành Streamer GAME chuyên nghiệp">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Trở thành Streamer GAME chuyên nghiệp">Trở thành Streamer GAME chuyên nghiệp</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.5</b> (218)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/thethaodientu-03.jpg" title="Game thủ chuyên nghiệp ước mơ và thách thức">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Game thủ chuyên nghiệp ước mơ và thách thức">Game thủ chuyên nghiệp ước mơ và thách thức</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star star-gray"></i>
+												<span class="star-vote"><b>4.0</b> (74)</span>
+												<p class="price-course">
+													<span class="price-course_new">219.000 ₫</span>
+													<span class="price-course_old"> <s>699.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 										<li>
+ 											<img src="./images/thethaodientu-04.jpg" title="Game FPS đang là xu thế game hiện đại">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<div class="category-course_main">
+ 												<h6 class="title-course"><a href="" title="Game FPS đang là xu thế game hiện đại">Game FPS đang là xu thế game hiện đại</a></h6>
+ 												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+												<span class="star-vote"><b>4.5</b> (969)</span>
+												<p class="price-course">
+													<span class="price-course_new">299.000 ₫</span>
+													<span class="price-course_old"> <s>999.000 ₫</s></span>
+												</p>
+ 											</div>
+ 										</li>
+ 									</ul>
+								</li> <!-- End Thể Thao Điện Tử -->
+							</ul>
+ 						</div>
+ 					</div> <!-- END BANNER CATEGORY -->
+
+ 					<div class="col-sm-12 col-md-8 col-lg-6">
+ 						<div class="banner-slide">
+ 							<div class="banner-slide_dots">
+ 								<ul>
+ 									<li class="dot-active"></li>
+ 									<li></li>
+ 									<li></li>
+ 									<li></li>
+ 									<li></li>
+ 								</ul>
+ 							</div>
+ 							<div class="banner-slide_images">
+ 								<ul>
+ 									<li class="image-active"> <img src="images/adv1.png" alt=""> </li>
+ 									<li> <img src="images/adv2.png" alt=""> </li>
+ 									<li> <img src="images/adv3.png" alt=""> </li>
+ 									<li> <img src="images/adv4.png" alt=""> </li>
+ 									<li> <img src="images/adv5.png" alt=""> </li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div> <!-- END BANNER SLIDE -->
+
+ 					<div class="col-lg-3">
+ 						<div class="banner-sale">
+ 							<ul>
+ 								<li> <img src="./images/banner-right-1.png" alt="Mã giảm giá thayco 10%"> </li>
+								<li> <img src="./images/banner-right-2.png" alt="Quà tặng từ Edumall"> </li>
+								<li style="margin-bottom: 0px;"> <img src="./images/banner-right-3.png" alt="Thanh toán online giảm 10%"> </li>
+ 							</ul>
+ 						</div>
+ 					</div> <!-- END BANNER SALE -->
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section> <!-- END BANNER -->
+
+ 	<section class="wrapper">
+ 		<div class="container">
+ 			<h4 class="title-section">Khuyến mại <span title="Xem thêm còn nhiều khóa học hấp dẫn">Xem thêm <i class="fa fa-chevron-circle-right"></i></span></h4>
+ 			<div class="widget course-discount">
+ 				<div class="row">
+ 					<div class="col-sm-12 col-md-8 col-lg-6">
+ 						<img src="images/adv-sale.png" alt="Chương trình khuyến mãi của Edumall" class="event-discount">
+ 					</div>
+ 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+ 						<div class="course course-sale">
+ 							<div class="course-top">
+ 								<span class="percent-discount">-88%</span>
+ 								<img src="images/khuyenmai-01.png" alt="" title="Khởi nghiệp từ thương mại điện tử" class="img-course">
+ 								<i class="fa fa-heart"></i>
+ 							</div>
+ 							<div class="course-main">
+ 								<span class="new-course">MỚI</span>
+ 								<p class="title-course" title="Khởi nghiệp từ thương mại điện tử">Khởi nghiệp từ thương mại điện tử</p>
+ 								<div class="author-course">
+ 									<img src="images/chibi01.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+ 									<span class="name-author">Soraka Vệ Binh Tinh Tú</span>
+ 								</div>
+ 								<div class="price-course">
+ 									<span class="price-old"><s>1.800.000₫</s></span>
+ 									<span class="price-new">219.000₫</span>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+ 						<div class="course course-sale">
+ 							<div class="course-top">
+ 								<span class="percent-discount">-86%</span>
+ 								<img src="images/khuyenmai-02.jpg" alt="" title="Tiếng Anh cơ bản cho người mới bắt đầu" class="img-course">
+ 								<i class="fa fa-heart"></i>
+ 							</div>
+ 							<div class="course-main">
+ 								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<span class="star-vote"><b>4.2</b> (364)</span>
+ 								<p class="title-course" title="Tiếng Anh cơ bản cho người mới bắt đầu">Tiếng Anh cơ bản cho người mới bắt đầu</p>
+ 								<div class="author-course">
+ 									<img src="images/chibi02.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+ 									<span class="name-author">Lux Vệ Binh Pyjama</span>
+ 								</div>
+ 								<div class="price-course">
+ 									<span class="price-old"><s>1.690.000₫</s></span>
+ 									<span class="price-new">219.000₫</span>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+ 						<div class="course course-sale">
+ 							<div class="course-top">
+ 								<span class="percent-discount">-84%</span>
+ 								<img src="images/khuyenmai-03.jpg" alt="" title="Thiền - Bí quyết cho cuộc sống mạnh khỏe" class="img-course">
+ 								<i class="fa fa-heart"></i>
+ 							</div>
+ 							<div class="course-main">
+ 								<span class="new-course">MỚI</span>
+ 								<p class="title-course" title="Thiền - Bí quyết cho cuộc sống mạnh khỏe">Thiền - Bí quyết cho cuộc sống mạnh khỏe</p>
+ 								<div class="author-course">
+ 									<img src="images/chibi03.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+ 									<span class="name-author">Ahri Vệ Binh Tinh Tú</span>
+ 								</div>
+ 								<div class="price-course">
+ 									<span class="price-old"><s>1.590.000₫</s></span>
+ 									<span class="price-new">219.000₫</span>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+ 						<div class="course course-sale">
+ 							<div class="course-top">
+ 								<span class="percent-discount">-83%</span>
+ 								<img src="images/khuyenmai-06.jpg" alt="" title="Làm việc hiệu quả hơn 300% qua 7 bước" class="img-course">
+ 								<i class="fa fa-heart"></i>
+ 							</div>
+ 							<div class="course-main">
+ 								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<span class="star-vote"><b>4.0</b> (421)</span>
+ 								<p class="title-course" title="Làm việc hiệu quả hơn 300% qua 7 bước">Làm việc hiệu quả hơn 300% qua 7 bước</p>
+ 								<div class="author-course">
+ 									<img src="images/chibi05.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+ 									<span class="name-author">Lulu Vệ Binh Tinh Tú</span>
+ 								</div>
+ 								<div class="price-course">
+ 									<span class="price-old"><s>1.490.000₫</s></span>
+ 									<span class="price-new">219.000₫</span>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+ 						<div class="course course-sale">
+ 							<div class="course-top">
+ 								<span class="percent-discount">-79%</span>
+ 								<img src="images/khuyenmai-07.jpg" alt="" title="Y học dinh dưỡng định hướng sức khỏe" class="img-course">
+ 								<i class="fa fa-heart"></i>
+ 							</div>
+ 							<div class="course-main">
+ 								<span class="new-course">MỚI</span>
+ 								<p class="title-course" title="Y học dinh dưỡng định hướng sức khỏe">Y học dinh dưỡng định hướng sức khỏe</p>
+ 								<div class="author-course">
+ 									<img src="images/chibi07.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+ 									<span class="name-author">Yasuo Thông Thạo 7</span>
+ 								</div>
+ 								<div class="price-course">
+ 									<span class="price-old"><s>1.590.000₫</s></span>
+ 									<span class="price-new">219.000₫</span>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+ 						<div class="course course-sale">
+ 							<div class="course-top">
+ 								<span class="percent-discount">-69%</span>
+ 								<img src="images/it-03.jpg" alt="" title="ALL in one, HTML/CSS, Bootstrap4" class="img-course">
+ 								<i class="fa fa-heart"></i>
+ 							</div>
+ 							<div class="course-main">
+ 								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<span class="star-vote"><b>4.6</b> (66)</span>
+ 								<p class="title-course" title="ALL in one, HTML/CSS, Bootstrap4">ALL in one, HTML/CSS, Bootstrap4</p>
+ 								<div class="author-course">
+ 									<img src="images/chibi08.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+ 									<span class="name-author">Leona Chiến Thần</span>
+ 								</div>
+ 								<div class="price-course">
+ 									<span class="price-old"><s>1.690.000₫</s></span>
+ 									<span class="price-new">219.000₫</span>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>	
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section> <!-- END KHUYẾN MẠI -->
+
+ 	<section class="wrapper">
+ 		<div class="container">
+ 			<div class="btnDirec">
+ 				<i class="fa fa-angle-left btnDirec-left"></i>
+				<i class="fa fa-angle-right btnDirec-right"></i>
+ 			</div>
+ 			<h4 class="title-section">Top bán chạy <span title="Xem thêm còn nhiều khóa học hấp dẫn">Xem thêm <i class="fa fa-chevron-circle-right"></i></span></h4>
+ 			<div class="widget course-selling">
+ 				<div class="wrapper-sell wrap-active" id="item-first-child">
+ 					<div class="row">
+ 						<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-84%</span>
+	 								<img src="images/marketing-01.jpg" alt="" title="Làm chủ 6 công cụ Marketing HOT nhất" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<span class="new-course">MỚI</span>
+	 								<p class="title-course" title="Làm chủ 6 công cụ Marketing HOT nhất">Làm chủ 6 công cụ Marketing HOT nhất</p>
+	 								<div class="author-course">
+	 									<img src="images/cb-caitlyn.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Caitlyn Sỹ Quan</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>1.190.000₫</s></span>
+	 									<span class="price-new">219.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-73%</span>
+	 								<img src="images/ngoai-ngu-01.png" alt="" title="Nền tảng tiếng Anh cho người mới bắt đầu" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<span class="star-vote"><b>4.3</b> (3113)</span>
+	 								<p class="title-course" title="Nền tảng tiếng Anh cho người mới bắt đầu">Nền tảng tiếng Anh cho người mới bắt đầu</p>
+	 								<div class="author-course">
+	 									<img src="images/cb-jinx.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Jinx Vệ Binh Tinh Tú</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>790.000₫</s></span>
+	 									<span class="price-new">149.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-69%</span>
+	 								<img src="images/kinhdoanh-khoinghiep-02.jpg" alt="" title="89 ngày thành tài với Amazon Dropshipping" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<span class="new-course">MỚI</span>
+	 								<p class="title-course" title="89 ngày thành tài với Amazon Dropshipping">89 ngày thành tài với Amazon Dropshipping</p>
+	 								<div class="author-course">
+	 									<img src="images/cb-vayne.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Vayne Hồ Quang</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>690.000₫</s></span>
+	 									<span class="price-new">149.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale course-last-hide">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-69%</span>
+	 								<img src="images/am-nhac-01.png" alt="" title="Học nhanh guita đệm hát trong 30 ngày" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<span class="new-course">MỚI</span>
+	 								<p class="title-course" title="Học nhanh guita đệm hát trong 30 ngày">Học nhanh guita đệm hát trong 30 ngày</p>
+	 								<div class="author-course">
+	 									<img src="images/ab-ez.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Ezreal Nhà Thám Hiểm</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>690.000₫</s></span>
+	 									<span class="price-new">149.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 						
+ 					</div>
+ 				</div>
+ 				<div class="wrapper-sell">
+ 					<div class="row">
+ 						<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-84%</span>
+	 								<img src="images/honhan-giadinh-01.jpg" alt="" title="Nghệ thuật phòng the giữ gìn hạnh phúc" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<span class="new-course">MỚI</span>
+	 								<p class="title-course" title="Nghệ thuật phòng the giữ gìn hạnh phúc">Nghệ thuật phòng the giữ gìn hạnh phúc</p>
+	 								<div class="author-course">
+	 									<img src="images/cb-ashe.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Ashe Mũi Tên Băng</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>1.290.000₫</s></span>
+	 									<span class="price-new">219.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-73%</span>
+	 								<img src="images/topbanchay-01.jpg" alt="" title="Yoga tăng cường sinh lý cho phái nữ" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<span class="star-vote"><b>4.5</b> (369)</span>
+	 								<p class="title-course" title="Yoga tăng cường sinh lý cho phái nữ">Yoga tăng cường sinh lý cho phái nữ</p>
+	 								<div class="author-course">
+	 									<img src="images/cb-kaisa.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Kai'Sa KDA Hàng Hiệu</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>990.000₫</s></span>
+	 									<span class="price-new">169.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-69%</span>
+	 								<img src="images/ngoai-ngu-02.jpg" alt="" title="Giao tiếp tiếng Anh với giáo viên bản ngữ" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<span class="new-course">MỚI</span>
+	 								<p class="title-course" title="Giao tiếp tiếng Anh với giáo viên bản ngữ">Giao tiếp tiếng Anh với giáo viên bản ngữ</p>
+	 								<div class="author-course">
+	 									<img src="images/cb-xayah.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Xayah Vệ Binh Tinh Tú</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>890.000₫</s></span>
+	 									<span class="price-new">149.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale course-last-hide">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-50%</span>
+	 								<img src="images/kinhdoanh-khoinghiep-03.jpg" alt="" title="Bí quyết kinh doanh quán cà phê từ A đến Z" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<span class="new-course">MỚI</span>
+	 								<p class="title-course" title="Bí quyết kinh doanh quán cà phê từ A đến Z">Bí quyết kinh doanh quán cà phê từ A đến Z</p>
+	 								<div class="author-course">
+	 									<img src="images/cb-riven.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Riven Kiếm Cổ Ngữ</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>690.000₫</s></span>
+	 									<span class="price-new">349.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 						
+ 					</div>
+ 				</div>
+ 				<div class="wrapper-sell" id="item-last-child">
+ 					<div class="row">
+ 						<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-73%</span>
+	 								<img src="images/ngoai-ngu-03.png" alt="" title="Tiếng Anh giao tiếp thường ngày" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star star-gray"></i>
+									<span class="star-vote"><b>4.0</b> (10)</span>
+	 								<p class="title-course" title="Tiếng Anh giao tiếp thường ngày">Tiếng Anh giao tiếp thường ngày</p>
+	 								<div class="author-course">
+	 									<img src="images/ab-sona.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Sona Đêm An Lành</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>790.000₫</s></span>
+	 									<span class="price-new">219.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-73%</span>
+	 								<img src="images/ngoai-ngu-04.png" alt="" title="100 ngày nâng cao trình độ nói tiếng Anh" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star star-gray"></i>
+									<span class="star-vote"><b>4.0</b> (19)</span>
+	 								<p class="title-course" title="100 ngày nâng cao trình độ nói tiếng Anh">100 ngày nâng cao trình độ nói tiếng Anh</p>
+	 								<div class="author-course">
+	 									<img src="images/cb-janna.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Janna Tiên Kiếm</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>790.000₫</s></span>
+	 									<span class="price-new">219.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-69%</span>
+	 								<img src="images/phattriencanhan-01.png" alt="" title="Bí quyết giao tiếp để thành công" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<span class="new-course">MỚI</span>
+	 								<p class="title-course" title="Bí quyết giao tiếp để thành công">Bí quyết giao tiếp để thành công</p>
+	 								<div class="author-course">
+	 									<img src="images/cb-j4.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Jarvan IV Lữ Bố</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>690.000₫</s></span>
+	 									<span class="price-new">129.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+	 						<div class="course course-sale course-last-hide">
+	 							<div class="course-top">
+	 								<span class="percent-discount">-73%</span>
+	 								<img src="images/am-nhac-02.jpg" alt="" title="Guita đệm hát cơ bản cùng HAKETU" class="img-course">
+	 								<i class="fa fa-heart"></i>
+	 							</div>
+	 							<div class="course-main">
+	 								<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+									<span class="star-vote"><b>4.5</b> (180)</span>
+	 								<p class="title-course" title="ALL in one, HTML/CSS, Bootstrap4">ALL in one, HTML/CSS, Bootstrap4</p>
+	 								<div class="author-course">
+	 									<img src="images/cb-akali.jpg" alt="" class="img-author" title="Các khóa học cùng tác giả" data-toggle="tooltip" data-placement="right">
+	 									<span class="name-author">Akali KDA Hàng Hiệu</span>
+	 								</div>
+	 								<div class="price-course">
+	 									<span class="price-old"><s>690.000₫</s></span>
+	 									<span class="price-new">149.000₫</span>
+	 								</div>
+	 							</div>
+	 						</div>
+	 					</div>
+	 						
+ 					</div>
+ 				</div>
+ 				
+ 			</div>
+ 		</div>
+ 	</section> <!-- END TOP BÁN CHẠY -->
+
+ 	<section class="wrapper_course">
+ 		<div class="container">
+ 			<div class="grade">
+ 				<div class="row">
+ 					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+ 						<div class="box-grade">
+ 							<h5 class="title-grade">Đánh giá cao <span title="Xem thêm còn nhiều khóa học hấp dẫn">Xem thêm <i class="fa fa-chevron-circle-right"></i></span></h5>
+ 							<div class="grade-course grade-vote">
+ 								<div class="grade-course_item">
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">1</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/danhgiacao-01.png" alt="" title="Ts. Lê Thẩm Dương - Chiến lược tài chính">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Ts. Lê Thẩm Dương - Chiến lược tài chính">Ts. Lê Thẩm Dương - Chiến lược tài chính</p>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<span class="star-vote"><b>4.8</b> (51)</span>
+											<div class="price-course">
+												<span class="price-old"><s>599.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">2</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/thietke-01.png" alt="" title="Luyện Photoshop trọn bộ với thầy Đức Lợi">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Luyện Photoshop trọn bộ với thầy Đức Lợi">Luyện Photoshop trọn bộ với thầy Đức Lợi</p>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star-half-o"></i>
+ 											<span class="star-vote"><b>4.7</b> (906)</span>
+											<div class="price-course">
+												<span class="price-old"><s>799.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">3</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/it-14.png" alt="" title="Lập trình C# trong 5 tuần - Cơ bản">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Lập trình C# trong 5 tuần - Cơ bản">Lập trình C# trong 5 tuần - Cơ bản</p>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<span class="star-vote"><b>4.8</b> (93)</span>
+											<div class="price-course">
+												<span class="price-old"><s>599.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div> <!-- End Course Main -->
+ 								</div>  <!-- End Course Item -->
+ 								<div class="grade-course_item">
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">4</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/danhgiacao-04.png" alt="" title="Ts. Lê Thẩm Dương - Tái cấu trúc để thành công">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Ts. Lê Thẩm Dương - Tái cấu trúc để thành công">Ts. Lê Thẩm Dương - Tái cấu trúc để thành công</p>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<span class="star-vote"><b>4.7</b> (46)</span>
+											<div class="price-course">
+												<span class="price-old"><s>599.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">5</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/danhgiacao-05.png" alt="" title="Chinh phục Ukulele trong 7 ngày">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Chinh phục Ukulele trong 7 ngày">Chinh phục Ukulele trong 7 ngày</p>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<span class="star-vote"><b>4.7</b> (45)</span>
+											<div class="price-course">
+												<span class="price-old"><s>799.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">6</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/danhgiacao-06.jpg" alt="" title="Phát âm chuẩn và luyện nói tiếng Anh">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Phát âm chuẩn và luyện nói tiếng Anh">Phát âm chuẩn và luyện nói tiếng Anh</p>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<span class="star-vote"><b>4.7</b> (91)</span>
+											<div class="price-course">
+												<span class="price-old"><s>699.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div> <!-- End Course Main -->
+ 								</div>  <!-- End Course Item -->
+ 								<div class="grade-course_item">
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">7</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/am-nhac-01.png" alt="" title="Guita đệm hát trong 30 ngày">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Guita đệm hát trong 30 ngày">Guita đệm hát trong 30 ngày</p>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star-half-o"></i>
+ 											<span class="star-vote"><b>4.6</b> (758)</span>
+											<div class="price-course">
+												<span class="price-old"><s>599.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">8</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/tinhocvanphong-01.png" alt="" title="85 chuyên đề Excel từ cơ bản đến nâng cao">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="85 chuyên đề Excel từ cơ bản đến nâng cao">85 chuyên đề Excel từ cơ bản đến nâng cao</p>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star-half-o"></i>
+ 											<span class="star-vote"><b>4.6</b> (364)</span>
+											<div class="price-course">
+												<span class="price-old"><s>599.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">9</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/thethao-suckhoe-03.png" title="Yoga trẻ hóa - Làm đẹp cho khuân mặt">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Yoga trẻ hóa - Làm đẹp cho khuân mặt">Yoga trẻ hóa - Làm đẹp cho khuân mặt</p>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star"></i>
+ 											<i class="fa fa-star-half-o"></i>
+ 											<span class="star-vote"><b>4.4</b> (75)</span>
+											<div class="price-course">
+												<span class="price-old"><s>799.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div> <!-- End Course Main -->
+ 								</div>  <!-- End Course Item -->
+
+ 							</div>
+ 							<div class="grade-dots grade-vote_dots">
+ 								<ul>
+ 									<li class="dot-active"></li>
+ 									<li></li>
+ 									<li></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+ 						<div class="box-grade">
+ 							<h5 class="title-grade">Mới nhất <span title="Xem thêm còn nhiều khóa học hấp dẫn">Xem thêm <i class="fa fa-chevron-circle-right"></i></span></h5>
+ 							<div class="grade-course grade-new">
+ 								<div class="grade-course_item">
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">1</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/moinhat-01.jpg" alt="" title="APPIUM - Cách Dễ Nhất Để Test Android Mobile">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="APPIUM - Cách Dễ Nhất Để Test Android Mobile">APPIUM - Cách Dễ Nhất Để Test Android Mobile</p>
+ 											<span class="new-course">MỚI</span>
+											<div class="price-course">
+												<span class="price-old"><s>599.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">2</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/moinhat-02.png" alt="" title="Kiếm tiền từ bất động sản thuê và cho thuê">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Kiếm tiền từ bất động sản thuê và cho thuê">Kiếm tiền từ bất động sản thuê và cho thuê</p>
+ 											<span class="new-course">MỚI</span>
+											<div class="price-course">
+												<span class="price-old"><s>499.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">3</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/moinhat-03.jpg" alt="" title="[EduVIP] CEO KHỞI NGHIỆP 4.0">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="[EduVIP] CEO KHỞI NGHIỆP 4.0">[EduVIP] CEO KHỞI NGHIỆP 4.0</p>
+ 											<span class="new-course">MỚI</span>
+											<div class="price-course">
+												<span class="price-old"><s>799.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div> <!-- End Course Main -->
+ 								</div>  <!-- End Course Item -->
+ 								<div class="grade-course_item">
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">4</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/moinhat-04.jpg" alt="" title="Học làm mỹ phẩm thiên nhiên từ A - Z">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Học làm mỹ phẩm thiên nhiên từ A - Z">Học làm mỹ phẩm thiên nhiên từ A - Z</p>
+ 											<span class="new-course">MỚI</span>
+											<div class="price-course">
+												<span class="price-old"><s>999.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">5</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/moinhat-05.jpg" alt="" title="Khóa Học Thuyết Trình Tiếng Anh Hoàn Hảo">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Khóa Học Thuyết Trình Tiếng Anh Hoàn Hảo">Khóa Học Thuyết Trình Tiếng Anh Hoàn Hảo</p>
+ 											<span class="new-course">MỚI</span>
+											<div class="price-course">
+												<span class="price-old"><s>1.249.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">6</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/moinhat-06.jpg" alt="" title="Đỉnh cao nghệ thuật trong tư vấn bảo hiểm">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Đỉnh cao nghệ thuật trong tư vấn bảo hiểm">Đỉnh cao nghệ thuật trong tư vấn bảo hiểm</p>
+ 											<span class="new-course">MỚI</span>
+											<div class="price-course">
+												<span class="price-old"><s>699.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div> <!-- End Course Main -->
+ 								</div>  <!-- End Course Item -->
+ 								<div class="grade-course_item">
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">7</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/moinhat-07.jpg" alt="" title="Kỹ năng đọc sách hiệu quả và không buồn ngủ">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Kỹ năng đọc sách hiệu quả và không buồn ngủ">Kỹ năng đọc sách hiệu quả và không buồn ngủ</p>
+ 											<span class="new-course">MỚI</span>
+											<div class="price-course">
+												<span class="price-old"><s>799.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">8</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/moinhat-08.png" alt="" title="Khóa học Facebook Marketing mới 2020">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Khóa học Facebook Marketing mới 2020">Khóa học Facebook Marketing mới 2020</p>
+ 											<span class="new-course">MỚI</span>
+											<div class="price-course">
+												<span class="price-old"><s>699.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div>
+ 									<div class="grade-course_main">
+ 										<div class="number-course main-float">9</div>
+ 										<div class="img-grade-course main-float">
+ 											<i class="fa fa-heart" title="Đánh dấu khóa học"></i>
+ 											<img src="./images/moinhat-09.jpg" alt="" title="Tự tin trong giao tiếp với người nước ngoài">
+ 										</div>
+ 										<div class="body-grade-course main-float">
+ 											<p class="title-course" title="Tự tin trong giao tiếp với người nước ngoài">Tự tin trong giao tiếp với người nước ngoài</p>
+ 											<span class="new-course">MỚI</span>
+											<div class="price-course">
+												<span class="price-old"><s>699.000 ₫</s></span>
+												<span class="price-new">219.000 ₫</span>
+											</div>
+ 										</div>
+ 									</div> <!-- End Course Main -->
+ 								</div>  <!-- End Course Item -->
+
+ 							</div>
+ 							<div class="grade-dots grade-new_dots">
+ 								<ul>
+ 									<li class="dot-active"></li>
+ 									<li></li>
+ 									<li></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-xl-4">
+ 						<div class="grade-slide">
+ 							<div class="grade-slide_dots">
+ 								<ul>
+ 									<li class="dot-active"></li>
+ 									<li></li>
+ 									<li></li>
+ 								</ul>
+ 							</div>
+ 							<div class="grade-slide_images">
+ 								<ul>
+ 									<li class="image-active"> <img src="images/banner1.png" alt=""> </li>
+ 									<li> <img src="images/banner2.png" alt=""> </li>
+ 									<li> <img src="images/banner3.png" alt=""> </li>
+ 									<li> <img src="images/banner4.png" alt=""> </li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section> <!-- END GRADE -->
+
+ 	<section class="wrapper">
+ 		<div class="container">
+ 			<div class="widget-section job">
+ 				<h3 class="title-section">Hành trang nghề nghiệp cho bạn</h3>
+ 				<div class="row">
+ 					<div class="col-sm-12 col-md-6">
+ 						<div class="job-main job_line-two">
+ 							<img src="./images/nghechoban-01.png" alt="Edumall Combo Ngọc Thô Tỏa Sáng" class="bg-job" title="Edumall Combo Ngọc Thô Tỏa Sáng">
+ 							<div class="title-job">Edumall Combo Ngọc Thô Tỏa Sáng</div>
+ 							<img src="images/nghechoban-s01.png" alt="" class="logo-job logo-green">
+ 						</div>
+ 					</div>
+ 					<div class="col-sm-12 col-md-6">
+ 						<div class="job-main job_line-two">
+ 							<img src="./images/nghechoban-02.png" alt="Chinh phục thế giới Digital" class="bg-job" title="Chinh phục thế giới Digital">
+ 							<div class="title-job">Chinh phục thế giới Digital</div>
+ 							<img src="images/nghechoban-s02.png" alt="" class="logo-job logo-red">
+ 							<div class="num-job">8 khóa</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-sm-12 col-md-6 col-lg-4">
+ 						<div class="job-main job_line-three">
+ 							<img src="./images/nghechoban-03.png" alt="Combo Tiếng Anh giao tiếp cho người mới bắt đầu" class="bg-job" title="Combo Tiếng Anh giao tiếp cho người mới bắt đầu">
+ 							<div class="title-job">Combo Tiếng Anh giao tiếp cho người mới bắt đầu</div>
+ 							<img src="images/nghechoban-s03.png" alt="" class="logo-job logo-green-1">
+ 							<div class="num-job">6 khóa</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-sm-12 col-md-6 col-lg-4">
+ 						<div class="job-main job_line-three">
+ 							<img src="./images/nghechoban-04.jpg" alt="Dạy con thành tài theo phương pháp người Do Thái" class="bg-job" title="Dạy con thành tài theo phương pháp người Do Thái">
+ 							<div class="title-job">Dạy con thành tài theo phương pháp người Do Thái</div>
+ 							<img src="images/nghechoban-s04.png" alt="" class="logo-job logo-orange">
+ 							<div class="num-job">3 khóa</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-sm-12 col-md-6 col-lg-4">
+ 						<div class="job-main job_line-three">
+ 							<img src="./images/nghechoban-05.png" alt="Combo thiết kế đỉnh cao 2020" class="bg-job" title="Combo thiết kế đỉnh cao 2020">
+ 							<div class="title-job">Combo thiết kế đỉnh cao 2020</div>
+ 							<img src="images/nghechoban-s04.png" alt="" class="logo-job logo-yellow">
+ 							<div class="num-job">6 khóa</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-sm-12 col-md-6 col-lg-4">
+ 						<div class="job-main job_line-three">
+ 							<img src="./images/nghechoban-06.png" alt="Kỹ năng lãnh đạo cao cấp cho doanh nghiệp" class="bg-job" title="Kỹ năng lãnh đạo cao cấp cho doanh nghiệp">
+ 							<div class="title-job">Kỹ năng lãnh đạo cao cấp cho doanh nghiệp</div>
+ 							<img src="images/nghechoban-s03.png" alt="" class="logo-job logo-blue">
+ 							<div class="num-job">6 khóa</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-sm-12 col-md-6 col-lg-4">
+ 						<div class="job-main job_line-three">
+ 							<img src="./images/nghechoban-07.png" alt="Đầu tư chứng khoán thông minh" class="bg-job" title="Đầu tư chứng khoán thông minh">
+ 							<div class="title-job">Đầu tư chứng khoán thông minh</div>
+ 							<img src="images/nghechoban-s05.png" alt="" class="logo-job logo-lightblue">
+ 							<div class="num-job">2 khóa</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section> <!-- END JOB -->
+
+ 	<section class="text-center">
+ 		<h4>Chưa tìm ra khóa học bạn muốn?</h4>
+ 		<h4>Đừng lo, có hàng trăm khóa học tại Edumall.vn</h4>
+ 	</section>
+
+ 	<section class="category-footer">
+ 		<div class="container">
+ 			<div class="category-footer_main">
+ 				<a href="">
+					<i class="fa fa-comment-o"></i>
+					<p>Ngoại ngữ</p>
+					<span class="border-span border-rb"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-music"></i>
+					<p>Âm nhạc</p>
+					<span class="border-span border-rb"></span>
+					<span class="border-span border-lb"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-mouse-pointer"></i>
+					<p>Công nghệ thông tin</p>
+					<span class="border-span border-rb"></span>
+					<span class="border-span border-lb"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-plus-square"></i>
+					<p>Thể thao - Sức khỏe</p>
+					<span class="border-span border-rb"></span>
+					<span class="border-span border-lb"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-bullhorn"></i>
+					<p>Marketing</p>
+					<span class="border-span border-rb"></span>
+					<span class="border-span border-lb"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-pencil"></i>
+					<p>Thiết kế</p>
+					<span class="border-span border-rb"></span>
+					<span class="border-span border-lb"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-line-chart"></i>
+					<p>Kinh doanh Khởi nghiệp</p>
+					<span class="border-span border-rb"></span>
+					<span class="border-span border-lb"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-diamond"></i>
+					<p>Phát triển cá nhân</p>
+					<span class="border-span border-lb"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-desktop"></i>
+					<p>Tin học văn phòng</p>
+					<span class="border-span border-tr"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-camera"></i>
+					<p>Multimedia</p>
+					<span class="border-span border-tr"></span>
+					<span class="border-span border-tl"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-graduation-cap"></i>
+					<p>Kiến thức chuyên ngành</p>
+					<span class="border-span border-tr"></span>
+					<span class="border-span border-tl"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-star"></i>
+					<p>Nghệ thuật - Đời sống</p>
+					<span class="border-span border-tr"></span>
+					<span class="border-span border-tl"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-female"></i>
+					<p>Hôn nhân - Gia đình</p>
+					<span class="border-span border-tr"></span>
+					<span class="border-span border-tl"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-github-alt"></i>
+					<p>Nuôi dậy con</p>
+					<span class="border-span border-tr"></span>
+					<span class="border-span border-tl"></span>
+				</a>
+				<a href="">
+					<i class="fa fa-gamepad"></i>
+					<p>Thể thao điện tử</p>
+					<span class="border-span border-tr"></span>
+					<span class="border-span border-tl"></span>
+				</a>
+				<a href=""></a>
+ 			</div>
+ 		</div>
+ 	</section> <!-- END CATEGORY FOOTER -->
+
+ 	<footer class="info-edumall">
+ 		<div class="container">
+ 			<div class="info-content">
+ 				<div class="row">
+ 					<div class="col-sm-12 col-md-4">
+ 						<div class="info-address">
+ 							<div class="logo-footer text-center">
+ 								<img src="./images/logo_full.png" alt="" class="logo-ds">
+ 							</div>
+ 							<div class="info-business text-center">
+ 								<img src="./images/register_icon1.png" alt="">
+								<img src="./images/register_icon2.png" alt="">
+ 							</div>
+ 							<p>Công ty cổ phần giáo dục <span>TOPICA ENGLISH</span></p>
+							<p>MST: 0106291976 do Sở Kế Hoạch và Đầu Tư TP. Hà Nội cấp ngày 27 tháng 08 năm 2013</p>
+							<p>Trụ sợ chính: Tầng 3, số 75 Phương Mai, Đống Đa, Hà Nội</p>
+							<div class="info-business-mobile text-center">
+								<img src="./images/register_icon1.png" alt="">
+								<img src="./images/register_icon2.png" alt="">
+							</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-sm-12 col-md-4">
+						<div class="info-clause text-center">
+							<h4>Về Edumall</h4>
+							<p>Điều khoản sử dụng</p>
+							<p>Quy chế hoạt động</p>
+							<p>Chính sách bảo mật</p>
+							<p>TT Chăm sóc khách hàng</p>
+							<p>Chính sách hoàn tiền</p>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<div class="info-app">
+							<div class="info-app_fight">
+								<img src="./images/logo-footer.png" alt="" class="info-app_fight-logo">
+								<div class="info-app_fight-text">
+									<div class="fight-text_item">Tải ngay App Edumall</div>
+									<div class="fight-text_item">Học tốt hơn - Thoải mái hơn</div>
+								</div>
+							</div>
+							<div class="info-app_download">
+								<img src="./images/app-store.png" alt="" class="download-app">
+								<img src="./images/gg-play.png" alt="" class="download-app">
+							</div>
+						</div>
+					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</footer> <!-- END FOOTER EDUMALL -->
+
+ 	<script type="text/javascript" src="js/1.js"></script>
+</body>
+</html>
